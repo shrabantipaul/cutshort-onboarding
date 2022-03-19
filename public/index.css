@@ -1,0 +1,205 @@
+body {
+    font-family: 'Inter';font-size: 22px;
+}
+
+.App {
+    width: 50%;
+      margin: 2rem auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .App {
+      width: 70%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .App {
+      width: 95%;
+    }
+  }
+  
+  input::placeholder{
+    opacity: 0.5;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  .workSpaceURLWrap {
+    display: flex;
+  }
+
+  .workspaceURLdisabled{
+    width: 30%;
+    border-radius: '5px 0 0 5px';
+  }
+
+  .workspaceURL{
+    width: 70%;
+    border-radius: '0 5px 5px 0'
+  }
+  .error-message {
+    margin: 0;
+    font-size: 10px;
+    color: red;
+    opacity: 1;
+  }
+  .hideError-message {
+    margin: 0;
+    font-size: 10px;
+    opacity: 0;
+  }
+  button {
+    background-color: #664DE5;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 8px;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .disabledButton {
+    background-color: #999;
+    cursor: not-allowed;
+  }
+
+  button:disabled:hover{
+    background-color: #999;
+  }
+
+  button:hover{
+    background-color: #3a2c82;
+  }
+  #progressbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 50%;
+    margin: 3rem auto;
+    /* (height of inner div) / 2 + padding */
+    /* padding: 3px; */
+  }
+
+.progress {
+    background-color: #ccc;
+    border-radius: 13px;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+}
+  
+#bar {
+    background-color: #664DE5;
+    /* width: 40%; */
+    height: 2px;
+    border-radius: 10px;
+    transition: 0.5s ease-in;
+  }
+  @media only screen and (max-width: 1024px) {
+    #progressbar {
+      width: 60%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #progressbar {
+      width: 90%;
+    }
+  }
+
+  .cardWrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cardWrap{
+    border: 1px solid #ccc;
+    padding: 1rem 1rem 0;
+    border-radius: 5px;
+}
+.for-heading {
+    margin: 0;
+}
+.card-desc {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.active-circle {
+  background-color: #664DE5;
+  border-radius: 50%;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.circle {
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1;
+  color: #ccc;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 14px;
+  color: #4c4b4b;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+}
+.summary {
+  text-align: center;
+  margin-top: 0;
+  font-size: 15px;
+  opacity: 0.7;
+  margin-bottom: 3rem
+}
+.text-input {
+  padding: 0.8rem;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0 0;
+}
+.input-wrap label {
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.7;
+} 
+.input-wrap label>span {
+  opacity: 0.5;
+}
+.text-input:disabled {
+  background-color: #F8F9FC;;
+}
+.logoContainer{
+  display: flex;
+  justify-content: center;
+}
